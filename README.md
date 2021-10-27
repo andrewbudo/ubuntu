@@ -1,7 +1,7 @@
 # ubuntu
 
-$ sudo nano /etc/apt/apt.conf  
 ```
+$ sudo nano /etc/apt/apt.conf  
 Acquire::http::proxy "http://172.16.160.10:8070/";
 Acquire::https::proxy "https://172.16.160.10:8070/";
 ```
