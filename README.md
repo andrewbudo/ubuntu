@@ -9,8 +9,10 @@ Acquire::https::proxy "https://172.16.160.10:8070/";
 $ sudo apt install git
 $ git config --global user.name "Andrew Budo"
 $ git config --global user.email "mail@gmail.com"
+// чтобы после первого ввода пароля(токена) git запомнил его:
 $ git config --global credential.helper cache
-// после первого ввода пароля(токена) git запомнит его
+// чтобы git перестал поминить токен:
+$ git config --global --unset credential.helper
 ```
 ```
 $ git clone https://github.com/andrewbudo/ubuntu.git
