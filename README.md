@@ -26,7 +26,21 @@ $ git push
 ```
 Profit.
 
+# windows
 
+for git proxy (this works for both http and https repos): 
 
+```
+git config --global http.proxy http://172.16.160.10:8070
+// git config --global http.proxy http://proxyuser:proxypwd@172.16.160.10:8070
+```
+to reset this proxy and work without proxy: 
 
+```
+git config --global --unset http.proxy
+```
 
+to check the currently set proxy:
+```
+git config --global --get http.proxy
+```
