@@ -2,8 +2,9 @@
 
 ```
 $ sudo nano /etc/apt/apt.conf  
-Acquire::http::proxy "http://172.16.160.10:8070/";
-Acquire::https::proxy "http://172.16.160.10:8070/";
+Acquire::http::Proxy "http://172.16.160.10:8070/";
+Acquire::https::Proxy "http://172.16.160.10:8070/";
+$ sudo apt update
 ```
 ```
 $ sudo apt install git
