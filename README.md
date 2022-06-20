@@ -5,7 +5,25 @@ $ sudo nano /etc/apt/apt.conf
 Acquire::http::Proxy "http://172.16.160.10:8070/";
 Acquire::https::Proxy "http://172.16.160.10:8070/";
 $ sudo apt update
+$ sudo apt-get install openssh-server
+$ ssh lena@172.16.160.8
+$ scp b.out lena@172.16.160.8:~/tmogi/
+$ sftp lena@172.16.160.8
+$ put lab1.cpp to_lena_lab1.cpp
+$ get lab2.cpp from_lena_lab2.cpp
+$ exit
 ```
+```
+$ sudo apt-get install gedit-plugins
+// Options / turn on Embedded Terminal / Ctrl + F9
+//From text-editor to terminal: F6
+//From terminal to text-editor: Ctrl+Tab Esc
+$ vim ~/.bashrc
+// add to the bottom: 
+// alias c="g++ --std=c++11 -Wall -Wextra -O2"
+$ c lab1.cpp
+```
+
 ```
 $ sudo apt install git
 $ git config --global user.name "Andrew Budo"
