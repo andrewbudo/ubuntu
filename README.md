@@ -12,12 +12,14 @@ $ sftp lena@172.16.160.8
 $ put lab1.cpp to_lena_lab1.cpp
 $ get lab2.cpp from_lena_lab2.cpp
 $ exit
+// to change password
+$ passwd
 ```
 ```
 $ sudo apt-get install gedit-plugins
 // Options / turn on Embedded Terminal / Ctrl + F9
-//From text-editor to terminal: F6
-//From terminal to text-editor: Ctrl+Tab Esc
+// From text-editor to terminal: F6
+// From terminal to text-editor: Ctrl+Tab Esc
 $ vim ~/.bashrc
 // add to the bottom: 
 // alias c="g++ --std=c++11 -Wall -Wextra -O2"
