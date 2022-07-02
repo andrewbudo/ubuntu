@@ -31,6 +31,24 @@ The options -b mean, that the program xsel is sent to the background and wait fo
 ```
 $ ssh-keygen
 ```
+## tmux
+
+ctrl+b - %: vertical split
+ctrl+b - ": horisontal spit
+ctrl+b - arrows: change window
+
+```
+// change vim colors
+$ vim ~/.vimrc
+set background=dark
+set tabstop=4
+$ :wq
+
+$ vim ~/.tmux.conf
+set -g default-terminal "screen-256color"
+$ :wq
+
+```
 
 ## git
 ```
@@ -64,9 +82,33 @@ $ vim ~/.bashrc
 // alias c="g++ --std=c++11 -Wall -Wextra -O2"
 $ c lab1.cpp
 ```
+## Android
+// run termux
+$ pkg install openssh
+$ passwd
+// input new password twice
+// start ssh server (demon)
+$ sshd
+// v shtorke termux: wake llock held
+// show current ip address
+$ ip addr
+// go to your advice (notebook)
+$ ssh 192.168.100.2 -p8022
+// type password
+// you looged to your android phone
+
+// to kill server
+$ killall sshd
+
+// to start python server on android phone
+$ pkg install python
+$ mkdir www && cd www
+$ python -m http.server
+
+// from notebook browser
+http://192.168.100.2:8000
 
 ## windows
-
 for git proxy (this works for both http and https repos): 
 
 ```
