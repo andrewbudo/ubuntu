@@ -22,11 +22,16 @@ $ passwd
 2-b) :.w !xsel -b to copy arbitrary selection or the current line (see "additional tip" below)
 3) paste into another program
 ... and now assign this to your favorite key-mapping.
-
+```
 The options -b mean, that the program xsel is sent to the background and wait for another program to paste the content
 
-additional tip: to copy the current line (where the cursor is located) very fast I map this command :.w !xsel -b to a key of choice - so copy works with and without a visual selection
+**additional tip**: to copy the current line (where the cursor is located) very fast I map this command :.w !xsel -b to a key of choice - so copy works with and without a visual selection
+
+## ssh
 ```
+$ ssh-keygen
+```
+
 ## git
 ```
 $ sudo apt install git
