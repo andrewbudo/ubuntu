@@ -1,4 +1,4 @@
-# ubuntu
+# linux 
 
 ```
 $ sudo nano /etc/apt/apt.conf  
@@ -15,17 +15,19 @@ $ exit
 // to change password
 $ passwd
 ```
+## copy text to clipboard
 ```
-$ sudo apt-get install gedit-plugins
-// Options / turn on Embedded Terminal / Ctrl + F9
-// From text-editor to terminal: F6
-// From terminal to text-editor: Ctrl+Tab Esc
-$ vim ~/.bashrc
-// add to the bottom: 
-// alias c="g++ --std=c++11 -Wall -Wextra -O2"
-$ c lab1.cpp
-```
+1) visually select a block text in normal mode: V<motionkey>
+2-a) run ex: :'<,'>w !xsel -b
+2-b) :.w !xsel -b to copy arbitrary selection or the current line (see "additional tip" below)
+3) paste into another program
+... and now assign this to your favorite key-mapping.
 
+The options -b mean, that the program xsel is sent to the background and wait for another program to paste the content
+
+additional tip: to copy the current line (where the cursor is located) very fast I map this command :.w !xsel -b to a key of choice - so copy works with and without a visual selection
+```
+## git
 ```
 $ sudo apt install git
 $ git config --global user.name "Andrew Budo"
@@ -45,9 +47,20 @@ $ git add test.txt
 $ git commit -m "created test.txt file"
 $ git push
 ```
-Profit.
 
-# windows
+## gedit
+```
+$ sudo apt-get install gedit-plugins
+// Options / turn on Embedded Terminal / Ctrl + F9
+// From text-editor to terminal: F6
+// From terminal to text-editor: Ctrl+Tab Esc
+$ vim ~/.bashrc
+// add to the bottom: 
+// alias c="g++ --std=c++11 -Wall -Wextra -O2"
+$ c lab1.cpp
+```
+
+## windows
 
 for git proxy (this works for both http and https repos): 
 
