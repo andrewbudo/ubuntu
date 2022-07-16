@@ -60,9 +60,9 @@ set -g default-terminal "screen-256color"
 $ :wq
 
 $ vim ~/.vimrc
-set background=dark
-set tabstop=4
-$ :wq
+  set background=dark
+  set tabstop=4
+  :wq
 
 
 ```
@@ -87,6 +87,26 @@ $ git add test.txt
 $ git commit -m "created test.txt file"
 $ git push
 ```
+## cmake
+```
+$ sudo apt-get install cmake
+$ vim CMakeLists.txt
+  cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
+  project(BudoProject)
+  add_executable(BudoEx src/main.cpp)
+  :wq
+$ mkdir build
+$ cd build
+$ cmake ..
+$ cmake --build . --config Release
+$ git status
+$ echo build >> .gitignore
+$ git add .
+$ git commit -m "add cmake"
+$ git push
+
+```
+
 
 ## gedit
 ```
