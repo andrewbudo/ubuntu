@@ -2,6 +2,8 @@
 
 ## terminal
 ```
+// show free space 
+$ free -mh
 // show file on interactive mode
 $ tail -f mydir/myfile.txt
 ctrl+a // go to command begin
@@ -10,15 +12,16 @@ ctrl+u // del command
 ctrl+z // send app to background
 $ fg // send app to foreground
 $ history
-$ !119 // call command from history
+$ !229 // call command from history
 ```
 ## ssh
 ```
 $ sudo nano /etc/apt/apt.conf  
+$ cat /etc/apt/apt.conf  
 Acquire::http::Proxy "http://172.16.160.10:8070/";
 Acquire::https::Proxy "http://172.16.160.10:8070/";
 $ sudo apt update
-$ sudo apt-get install openssh-server
+$ sudo apt install openssh-server
 $ ssh lena@172.16.160.8
 
 // copy file to / from remote server
@@ -48,11 +51,11 @@ The options -b mean, that the program xsel is sent to the background and wait fo
 **additional tip**: to copy the current line (where the cursor is located) very fast I map this command :.w !xsel -b to a key of choice - so copy works with and without a visual selection
 
 ## tmux
-
-ctrl+b, %: vertical split
-ctrl+b, ": horisontal spit
-ctrl+b, arrows: change window
-ctrl+b, ctrl+arrows: change size of window
+Prefix = ctrl+b or ctrl+a
+prefix, %: vertical split
+prefix, ": horisontal spit
+prefix, arrows: change window
+prefix, ctrl+arrows: change size of window
 ```
 // change vim colors
 $ vim ~/.tmux.conf
@@ -60,11 +63,9 @@ set -g default-terminal "screen-256color"
 $ :wq
 
 $ vim ~/.vimrc
-  set background=dark
-  set tabstop=4
-  :wq
-
-
+$ cat ~/.vimrc
+set background=dark
+set tabstop=4
 ```
 
 ## git
@@ -91,10 +92,10 @@ $ git push
 ```
 $ sudo apt-get install cmake
 $ vim CMakeLists.txt
-  cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
-  project(BudoProject)
-  add_executable(BudoEx src/main.cpp)
-  :wq
+$ cat CMakeLists.txt
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
+project(BudoProject)
+add_executable(BudoEx src/main.cpp)
 $ mkdir build
 $ cd build
 $ cmake ..
@@ -104,9 +105,12 @@ $ echo build >> .gitignore
 $ git add .
 $ git commit -m "add cmake"
 $ git push
-
 ```
-
+```
+// to show generators
+$ cmake --help
+$ cmake -G "Eclipse CDT4 - Unix Makefiles" ..
+```
 
 ## gedit
 ```
