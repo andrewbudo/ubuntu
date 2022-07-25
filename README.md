@@ -14,6 +14,11 @@ $ fg // send app to foreground
 $ history
 $ !229 // call command from history
 ```
+## vim
+```
+$ vimtutor ru
+```
+
 ## ssh
 ```
 $ sudo nano /etc/apt/apt.conf  
