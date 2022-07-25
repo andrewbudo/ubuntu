@@ -73,6 +73,10 @@ set tabstop=4
 $ sudo apt install git
 $ git config --global user.name "Andrew Budo"
 $ git config --global user.email "mail@gmail.com"
+$ ssh-keygen
+$ cat ~/.ssh/id_rsa.pub
+// copy text to User Settings github/gitlab
+
 // чтобы после первого ввода пароля(токена) git запомнил его:
 $ git config --global credential.helper cache
 // чтобы git перестал поминить токен:
