@@ -2,8 +2,12 @@
 
 ## terminal
 ```
+// ls -la
+ll
 // show free space 
 $ free -mh
+// check os version
+$ lscpu
 // show file on interactive mode
 $ tail -f mydir/myfile.txt
 ctrl+a // go to command begin
@@ -13,11 +17,19 @@ ctrl+z // send app to background
 $ fg // send app to foreground
 $ history
 $ !229 // call command from history
+
+// open your default file manager from terminal
+$ xdg-open .
 ```
 ## vim
 ```
 $ vimtutor ru
 ```
+
+## virtualbox
+$ sudo apt update
+$ sudo apt install virtualbox
+$ sudo apt install virtualbox-ext-pack
 
 ## ssh
 ```
